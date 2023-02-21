@@ -1,0 +1,20 @@
+import random
+
+def generate_pet_name():
+    # Define some lists of adjectives and nouns to use in the pet name
+    adjectives = ['fluffy', 'furry', 'cuddly', 'silly', 'spotty', 'stripy', 'wiggly', 'zippy']
+    nouns = ['puppy', 'kitten', 'bunny', 'hamster', 'guinea pig', 'parrot', 'turtle', 'goldfish']
+    
+    # Use the random module to select a random adjective and noun from the lists
+    adjective = random.choice(adjectives)
+    noun = random.choice(nouns)
+    
+    # Combine the adjective and noun to create the pet name
+    pet_name = adjective + ' ' + noun
+    
+    return pet_name
+
+# Example usage
+print(generate_pet_name())  # Output: "silly hamster"
+print(generate_pet_name())  # Output: "zippy puppy"
+print(generate_pet_name())  # Output: "furry parrot"
